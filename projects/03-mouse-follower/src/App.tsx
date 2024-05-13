@@ -6,7 +6,7 @@ const FollowMouse = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMove = (event: MouseEvent) => {
+    const handleMove = (event: MouseEvent): void  => {
       const { clientX, clientY } = event;
       setPosition({ x: clientX, y: clientY });
     };
