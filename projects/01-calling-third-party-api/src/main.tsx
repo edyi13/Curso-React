@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { PokemonByName } from './Components/PokemonByName.tsx'
-import { Home, PokeDetail } from './pages/index.ts'
+import { Home, PokeDetails, PokemonByName } from './pages/index.ts'
 import './index.scss'
 import PokemonProvider from './context/PokemonContext.tsx'
 
@@ -11,8 +10,8 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: '/:pokemonId',
-    element: <PokeDetail /> 
+    path: '/:pokeId',
+    element: <PokeDetails /> 
   },
   {
     path: '/pokemonByName',

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/PokemonByName.css";
+import "./styles.css";
 import axios from "axios";
 export const PokemonByName = () => {
   const [{ name, url }, setResponse] = useState({
